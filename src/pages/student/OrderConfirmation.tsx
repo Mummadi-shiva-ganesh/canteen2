@@ -1,6 +1,6 @@
 import { useParams, Link, useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Check, Package, Clock, Truck, CheckCircle2, MapPin } from 'lucide-react'
+import { Check, Package, Clock, Truck, CheckCircle, MapPin } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -12,8 +12,8 @@ import { useState, useEffect } from 'react'
 const orderStatuses = [
   { id: 'pending', label: 'Pending', icon: Clock, color: 'yellow' },
   { id: 'preparing', label: 'Preparing', icon: Package, color: 'blue' },
-  { id: 'ready', label: 'Ready', icon: CheckCircle2, color: 'green' },
-  { id: 'delivered', label: 'Delivered', icon: CheckCircle2, color: 'green' },
+  { id: 'ready', label: 'Ready', icon: CheckCircle, color: 'green' },
+  { id: 'delivered', label: 'Delivered', icon: CheckCircle, color: 'green' },
 ]
 
 export function OrderConfirmation() {

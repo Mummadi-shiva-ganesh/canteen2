@@ -71,7 +71,8 @@ export function Payment() {
       variant: 'success',
     })
 
-    navigate(`/order-confirmation/${orderId}`)
+    // After placing an order, redirect user to My Orders page
+    navigate('/my-orders')
   }
 
   const handleOpenUpiApp = () => {
